@@ -1,0 +1,84 @@
+<html>
+<head>
+  <!-- optional use of bootstrap -->
+  <link href="bootstrap.css" rel="stylesheet"/>
+  
+  <script src="jquery-3.0.1.js"></script>
+  <script src="jquery-3.0.0.js"></script>
+
+  <style type="text/css">
+
+    table tbody tr#hiddenHeader th {
+        /*This tr is a dummy header row in order to calculate the column widths correctly
+            This row cannot be hidden otherwise the browser excludes it from the column widths calculation
+        font-weight: bold;*/
+        color: #FFF; 
+        border-left-color:#FFF;
+        border-right-color:#FFF;
+    }
+
+
+    .table-fixed-header thead {
+        /*padding-right: 25px;*/
+        display: block;
+    }
+
+    .table-fixed-header tbody {
+      height: 200px;
+      overflow-y: auto;
+      display: block;
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+<table id="fixedHeader" class="table table-condensed table-bordered table-fixed-header"><thead>
+<tr>
+	<th>Column 1</th>
+	<th>Column 2</th>
+	<th>Wider Header than data</th>
+	<th>Column 3</th>
+</tr>
+</thead>
+<tbody>
+	<tr>
+<td>Vel molior quidem. Importunus vel utinam facilisi sagaciter. Hos ut consequat vulputate verto tation laoreet comis saluto.</td>
+<td> Hendrerit luctus wisi luctus illum multo enim eu exerci bis genitus duis.</td>
+<td>1</td>
+<td> Nutus hos ut autem nimis exerci in vel praesent dolor tristique ea.</td>
+</tr>
+	<tr>
+<td>Ut sed ex nisl sit valde. Commodo importunus duis luctus eligo humo. Nimis praesent gilvus augue erat iaceo voco adipiscing melior ludus interdico blandit.</td>
+<td>Huic demoveo amet</td>
+<td>2</td>
+<td>Blandit abluo defui suscipit bene genitus singularis foras neo nulla.</td>
+</tr>
+<tr>
+<td>x</td>
+<td>Huic demoveo amet</td>
+<td>3</td>
+<td>Vicis ullamcorper tamen consequat augue</td>
+</tr>
+<tr>
+<td>y</td>
+<td>Utrum tation et ne duis</td>
+<td>4</td>
+<td>Pecus delenit ut antehabeo vulputate nulla diam at.</td>
+</tr>
+
+ <tr id="hiddenHeader">	<th>Column 1</th>
+	<th>Column 2</th>
+	<th>Wider Header than data</th>
+	<th>Column 2</th>
+	
+</tbody>
+</table>
+
+<script src="FixedTable.js"></script>
+
+</body>
+
+</html>
